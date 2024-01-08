@@ -20,8 +20,23 @@ Jupyter notebooks are in the rag directory.
    * Execute all cells in 'loaddb.ipynb'   
 6. `$ panel serve chatbot.ipynb # back on the command line`
 7. Open your browser, enter http://localhost:5006/chatbot in your browser. Note: if you are running this the first time, it will be really slow to show the chatbot interface because it is downloading the local LLM, Falcon, loading ChromaDB, and loading local LLM. After the first time, when you run the chatbot in your browser, it only needs to load ChromaDB and Local LLM before showing the chat interface. 
+8. By default, "Local LLM" is selected. If you have an OpenAI API key, see the "Configure your OpenAI key" section below. If you use the local LLM option, depending on your computer's memory (>=16 GB is recommended), you might experience slow response from the chatbot. 
 
-# Load your own PDF
+# Configure your OpenAI key
+There are two ways to setup OpenAI key in MacOS:
+Option 1: Set up your OpenAI key in your OS environment
+1. Run the following in your commandline window
+   * `$ echo "export OPENAI_API_KEY='yourkey'" >> ~/.zshrc`
+   * `$ source ~/.zshrc`
+2. Select "OS Env OpenAI"
+3. Enter your questions from the main chat interface.
+Option 2: Enter you OpenAI key in your Chatbot Application
+1. Select "Enter OpenAI" option from Sidebar "Select LLM" option
+2. Enter your OpenAI API key in the entry field below the above option
+3. Enter your questions from the main chat interface
+Note: ChatBot will take the UI OpenAI API key when the "Enter OpenAI" is selected. 
+
+# Load your own PDFs
 1. Delete PDFs under ./source
 2. Copy your PDFs to ./source
 3. Run 'Jupyter Lab'
