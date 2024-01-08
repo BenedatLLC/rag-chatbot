@@ -1,0 +1,14 @@
+name: rag-chatbot
+dependencies:
+  - python=3.11
+  - panel
+  - pip
+  - pip:
+    - jupyterlab
+    - pypdf
+    - chromadb==0.4.21
+    - gpt4all
+    - langchain==0.0.353
+    - sentence_transformers==2.2.2
+    - openai
+    - tiktoken
