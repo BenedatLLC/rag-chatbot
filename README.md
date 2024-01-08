@@ -2,8 +2,8 @@
 
 This repository contains Jupyter Notebooks to perform retrieval Q&A from multiple PDF documents. It supports multiple language models OpenAI and local Falcon. If you don't have an OpenAI key, by default, it selects local Falcon language model. Note: Local LLM will be slow if you have limited memory on your laptop (recommend RAM >= 16GB)
 
-## How the project rag is structured?
-Jupyter notebooks are in the rag directory. 
+## How the project rag-chatbot is structured?
+Jupyter notebooks are in the rag-chatbot directory. 
 
 * ./source (store your PDF files here. By default, Kubernetes PDFs are stored here. Kubernetes PDFs are from https://github.com/dohsimpson/kubernetes-doc-pdf/. Refer to this repo for the latest k8s PDFs.)
 * ./image (Your chat website logo)
