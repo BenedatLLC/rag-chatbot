@@ -10,11 +10,15 @@ Jupyter notebooks are in the rag directory.
 * ./db (Your ChromaDB output directory)
 
 # How to run the code
-1. `$ git clone`
+1. `$ git clone https://github.com/BenedatLLC/rag-chatbot.git`
 2. `$ cd rag-chatbot`
 3. `$ conda env create -f environment.yml`
 4. `$ conda activate rag-chatbot`
-5. `$ panel serve chatbot.ipynb`
+5. Import the sample PDF files into the Chroma DB (vector database):  
+   * `$ jupyter lab`
+   * Open 'loaddb.ipynb'
+   * Execute all cells in 'loaddb.ipynb'   
+6. `$ panel serve chatbot.ipynb # back on the command line`
 
 # Load your own PDF
 1. Delete PDFs under ./source
