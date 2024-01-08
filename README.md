@@ -19,6 +19,7 @@ Jupyter notebooks are in the rag directory.
    * Open 'loaddb.ipynb'
    * Execute all cells in 'loaddb.ipynb'   
 6. `$ panel serve chatbot.ipynb # back on the command line`
+7. Open your browser, enter http://localhost:5006/chatbot in your browser. Note: if you are running this the first time, it will be really slow to show the chatbot interface because it is downloading the local LLM, Falcon, loading ChromaDB, and loading local LLM. After the first time, when you run the chatbot in your browser, it only needs to load ChromaDB and Local LLM before showing the chat interface. 
 
 # Load your own PDF
 1. Delete PDFs under ./source
