@@ -30,7 +30,9 @@ Option 1: Set up your OpenAI key in your OS environment
    * `$ source ~/.zshrc`
 2. Select "OS Env OpenAI"
 3. Enter your questions from the main chat interface.
-Option 2: Enter you OpenAI key in your Chatbot Application
+
+   
+Option 2: Enter you OpenAI key in your Chatbot interface
 1. Select "Enter OpenAI" option from Sidebar "Select LLM" option
 2. Enter your OpenAI API key in the entry field below the above option
 3. Enter your questions from the main chat interface
